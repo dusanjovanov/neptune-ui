@@ -1,16 +1,16 @@
 {
-  "name": "neptune-ui",
+  "name": "neptune-components",
   "version": "0.0.1",
   "description": "VanillaJS component library.",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://github.com/dusanjovanov/neptune-ui#readme",
+  "homepage": "https://github.com/dusanjovanov/neptune-components#readme",
   "bugs": {
-    "url": "https://github.com/dusanjovanov/neptune-ui/issues"
+    "url": "https://github.com/dusanjovanov/neptune-components/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dusanjovanov/neptune-ui.git"
+    "url": "git+https://github.com/dusanjovanov/neptune-components.git"
   },
   "author": "Dusan Jovanov <jovanovdusan1@gmail.com>",
   "files": [
