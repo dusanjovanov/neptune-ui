@@ -44,6 +44,14 @@ export const BORDER_RADIUS = {
   full: "9999px",
 };
 
+export const BREAKPOINTS = {
+  sm: "640px",
+  md: "768px",
+  lg: "1024px",
+  xl: "1280px",
+  "2xl": "1536px",
+};
+
 export const SPACING = {
   "0": "0px",
   px: "1px",

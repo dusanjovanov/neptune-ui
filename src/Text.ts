@@ -16,16 +16,6 @@ export class Text<
     return this;
   }
 
-  textAlign(value: Property.TextAlign) {
-    this.dom.style.textAlign = value;
-    return this;
-  }
-
-  fontWeight(value: Property.FontWeight) {
-    this.dom.style.fontWeight = String(value);
-    return this;
-  }
-
   color(value: Property.Color) {
     this.dom.style.color = value;
     return this;
@@ -40,4 +30,4 @@ export class Text<
   }
 }
 
-export type TextSize = "xs" | "sm" | "md" | "lg";
+export type TextSize = keyof typeof FONT_SIZE;

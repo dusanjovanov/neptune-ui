@@ -4,6 +4,7 @@ export * from "./constants";
 export * from "./Effects";
 export * from "./NumberControl";
 export * from "./RangeControl";
+export * from "./SelectControl";
 export * from "./signals";
 export * from "./Text";
 export * from "./TextControl";
