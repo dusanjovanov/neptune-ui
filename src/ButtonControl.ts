@@ -1,18 +1,18 @@
-import { InputText } from "neptune-htm";
+import { Button } from "neptune-htm";
 import { BORDER_RADIUS, COLORS, FONT_SIZE, SPACING } from "./constants";
 
-export class TextControl extends InputText {
+export class ButtonControl extends Button {
   constructor() {
     super();
 
     this.size("md")
+      .appearance("none")
       .bgColor(COLORS.black)
       .color(COLORS.white)
-      .b("none")
-      .w("100%");
+      .b("none");
   }
 
-  size(value: TextControlSize) {
+  size(value: ButtonSize) {
     return this.style({
       height: HEIGHT_MAP[value],
       paddingLeft: PADDING_MAP[value],
@@ -53,4 +53,4 @@ const BORDER_RADIUS_MAP = {
   lg: BORDER_RADIUS.md,
 };
 
-export type TextControlSize = "xs" | "sm" | "md" | "lg";
+export type ButtonSize = "xs" | "sm" | "md" | "lg";

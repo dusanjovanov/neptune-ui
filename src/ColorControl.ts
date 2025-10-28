@@ -1,28 +1,22 @@
 import { InputColor } from "neptune-htm";
-import { BORDER_RADIUS } from "./constants";
+import { BORDER_RADIUS, COLORS } from "./constants";
 
 export class ColorControl extends InputColor {
   constructor() {
     super();
 
-    this.style({
-      appearance: "none",
-      border: "1px solid #000",
-      display: "block",
-    });
-
-    this.css("::-webkit-color-swatch-wrapper", {
-      appearance: "none",
-      padding: 0,
-      border: 0,
-    });
-
-    this.css("::-webkit-color-swatch", {
-      appearance: "none",
-      border: 0,
-    });
-
-    this.size("md");
+    this.b(`1px solid ${COLORS.black}`)
+      .display("block")
+      .css("::-webkit-color-swatch-wrapper", {
+        appearance: "none",
+        padding: 0,
+        border: 0,
+      })
+      .css("::-webkit-color-swatch", {
+        appearance: "none",
+        border: 0,
+      })
+      .size("md");
   }
 
   size(size: ColorControlSize) {
@@ -35,10 +29,10 @@ export class ColorControl extends InputColor {
 }
 
 const SIZE_MAP = {
-  xs: 12,
-  sm: 16,
-  md: 20,
-  lg: 24,
+  xs: 18,
+  sm: 24,
+  md: 32,
+  lg: 40,
 };
 
 const BORDER_RADIUS_MAP = {

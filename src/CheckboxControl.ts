@@ -5,7 +5,7 @@ export class Checkbox extends InputCheckbox {
   constructor() {
     super();
 
-    this.style({ cursor: "pointer" });
+    this.cursor("pointer");
   }
 
   size(value: CheckboxControlSize) {

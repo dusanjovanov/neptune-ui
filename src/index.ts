@@ -1,3 +1,4 @@
+export * from "./ButtonControl";
 export * from "./CheckboxControl";
 export * from "./ColorControl";
 export * from "./constants";
